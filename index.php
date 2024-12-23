@@ -38,10 +38,12 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
             <div class="icons">
-                 <button class="clear-cart-btn">Clear Cart</button>
+                <button class="clear-cart-btn">Clear Cart</button>
                 <span class="icon">🔔</span>
-                <span class="icon">🛒</span>
-                <span id="cart-bubble" class="icon">0</span>
+                <span class="icon cart-icon-wrapper">
+                    🛒
+                    <span id="cart-bubble" class="cart-bubble">0</span>
+                </span>
                 <span class="icon">👤</span>
             </div>
         </header>

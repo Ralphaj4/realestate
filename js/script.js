@@ -1,5 +1,5 @@
 document.querySelector('.clear-cart-btn').addEventListener('click', function () {
-    fetch('php/clear_cart.php', { method: 'POST' })
+    fetch('/php_project/php/clear_cart.php', { method: 'POST' })
 
         .then(response => response.text())
         .then(result => {
@@ -76,3 +76,4 @@ function updateCartBubble(cartCount) {
         cartBubble.style.display = 'none';  // Hide the bubble when the cart is empty
     }
 }
+

@@ -1,0 +1,29 @@
+/* Account Page Specific Styles */
+.account-content {
+    margin-top: 80px; /* Adjust for fixed navbar */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.account-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.account-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.account-details p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.account-details strong {
+    color: #1877f2;
+}
+
+/* Add any specific styles for the account page */

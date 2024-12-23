@@ -256,6 +256,7 @@ header {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: flex-start; /* Align items to the start of the container */
+    
 }
 
 .products-grid .product {
@@ -271,6 +272,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.products-grid .product:hover{
+    
 }
 
 .products-grid .product img {
@@ -324,21 +329,17 @@ header {
     content: '\2713'; /* Change the content to a tick mark */
 }
 
-#cart-bubble {
-    position: absolute;
-    bottom: -3px; /* Position it 5px below the cart icon */
-    left: 150px; /* Adjust the distance from the right edge */
-    background-color: #ff4c4c; /* Red background for the bubble */
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px; /* Adjust the size of the bubble */
-    font-size: 12px; /* Font size for the number */
-    display: none; /* Hide by default, will be shown when cart count > 0 */
+
+
+.icons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 10px; /* Add spacing between items */
 }
 
 .icons .icon {
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 24px; /* Adjust the size of the icons */
+    cursor: pointer; /* Change the cursor to pointer on hover */
 }
 
 .icons .icon:hover {
@@ -374,4 +375,30 @@ header input::placeholder {
     font-size: 24px; /* Adjust size as needed */
     font-weight: 500; /* Match the design */
     margin: 0;
+}
+
+.clear-cart-btn {
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-icon-wrapper {
+    display: inline-block; /* Ensures the icon and bubble are grouped */
+    position: relative; /* Enables positioning of the cart bubble relative to the cart icon */
+}
+
+.cart-bubble {
+    position: absolute;
+    top: 50%; /* Position the bubble under the cart icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 20px; /* Makes it round */
+    font-weight: bold;
+    min-width: 20px; /* Ensures consistent sizing */
+    text-align: center;
 }
